@@ -342,6 +342,12 @@ footer p {
   font-size: 0.9rem;
 }
 
+.footer-email {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -370,4 +376,31 @@ footer p {
     text-align: center;
     padding: 2rem;
   }
+}
+
+/* Menopausa Section */
+.menopausa {
+  background-color: var(--light-bg);
+}
+
+.menopausa-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.menopausa-content p {
+  margin-bottom: 1.5rem;
+}
+
+.climacteric-img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
