@@ -28,24 +28,62 @@
     <main>
       <section class="section">
         <div class="container">
+          
+          <!-- Top Grid Images (Using existing assets as placeholders) -->
+          <div class="modalities-grid" style="margin-bottom: 3rem; grid-template-columns: repeat(3, 1fr);">
+            <div class="modality-card scroll-reveal" style="height: 300px;">
+                <img src="assets/equilibrio-1.png" alt="Foco Mental">
+            </div>
+            <div class="modality-card scroll-reveal" style="height: 300px; transition-delay: 0.1s;">
+                <img src="assets/sono-2.png" alt="Saúde Cerebral">
+            </div>
+            <div class="modality-card scroll-reveal" style="height: 300px; transition-delay: 0.2s;">
+                <img src="assets/equilibrio-4.jpg" alt="Paz Mental">
+            </div>
+          </div>
+
           <article class="blog-post">
-            <h2>Atividade Física e Saúde Mental: O Poder do Movimento para o Cérebro</h2>
+            <h2 class="section-title scroll-reveal" style="margin-bottom: 2rem; font-size: 2.5rem;">Atividade Física e Saúde Mental: O Poder do Movimento para o Cérebro</h2>
             
-            <p>A prática regular de exercícios físicos estimula a liberação de endorfina e serotonina, neurotransmissores diretamente ligados ao bem-estar emocional e ao equilíbrio mental. A endorfina atua como um analgésico natural do corpo, promovendo sensação de prazer, relaxamento e redução do estresse e da ansiedade. Já a serotonina está associada à regulação do humor, do sono e da sensação de satisfação, contribuindo para maior estabilidade emocional.</p>
+            <p class="scroll-reveal">A prática regular de exercícios físicos estimula a liberação de endorfina e serotonina, neurotransmissores diretamente ligados ao bem-estar emocional e ao equilíbrio mental. A endorfina atua como um analgésico natural do corpo, promovendo sensação de prazer e relaxamento.</p>
+            
+            <hr style="border: 0; height: 1px; background: #ddd; margin: 3rem 0;">
 
-            <h3>Benefícios Cognitivos</h3>
-            <p>Além dos efeitos sobre o humor, essas substâncias também exercem papel importante nas funções cognitivas. Com níveis mais elevados de serotonina e melhor circulação sanguínea no cérebro, ocorre melhora do foco, da atenção e da memória, facilitando o aprendizado e a tomada de decisões. Por isso, a atividade física não beneficia apenas o corpo, mas também fortalece a saúde mental e o desempenho intelectual, sendo uma aliada importante na rotina diária.</p>
+            <div class="curiosity-list">
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">🧠</div>
+                <div class="curiosity-text">
+                  <h3>Foco e Memória</h3>
+                  <p>Com níveis mais elevados de serotonina e melhor circulação sanguínea no cérebro, ocorre melhora do foco, da atenção e da memória, facilitando o aprendizado.</p>
+                </div>
+              </article>
 
-            <h3>Redução do Estresse</h3>
-            <p>Além disso, a prática de exercícios físicos contribui para a redução dos níveis de cortisol, hormônio diretamente relacionado ao estresse crônico. Com a diminuição do cortisol e o aumento da endorfina e da serotonina, o organismo entra em um estado de maior equilíbrio, o que favorece a sensação de calma, controle emocional e disposição ao longo do dia.</p>
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">😌</div>
+                <div class="curiosity-text">
+                  <h3>Xô, Estresse!</h3>
+                  <p>Exercícios reduzem os níveis de cortisol, o hormônio do estresse. Isso favorece a sensação de calma, controle emocional e disposição ao longo do dia.</p>
+                </div>
+              </article>
 
-            <h3>Neuroplasticidade e Sono</h3>
-            <p>Outro ponto relevante é que a atividade física estimula a neuroplasticidade, ou seja, a capacidade do cérebro de formar novas conexões neurais. Esse processo é fundamental para a consolidação da memória, a melhora do raciocínio e o aumento da capacidade de concentração. Exercícios regulares também estão associados a uma melhor qualidade do sono, fator essencial para a recuperação mental e para o bom funcionamento das funções cognitivas.</p>
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">💡</div>
+                <div class="curiosity-text">
+                  <h3>Neuroplasticidade</h3>
+                  <p>A atividade física estimula a capacidade do cérebro de formar novas conexões neurais, fundamental para o raciocínio e a saúde cognitiva a longo prazo.</p>
+                </div>
+              </article>
+            </div>
 
-            <hr>
+            <hr style="border: 0; height: 1px; background: #ddd; margin: 3rem 0;">
 
-            <h3>Conclusão</h3>
-            <p>Dessa forma, manter uma rotina de exercícios não apenas ajuda a aliviar tensões do dia a dia, mas também potencializa o desempenho mental, melhora a produtividade e contribui para a prevenção de transtornos como ansiedade, depressão e declínio cognitivo ao longo do tempo.</p>
+            <div class="menopausa-content scroll-reveal">
+              <h3 style="color: var(--dark-bg); margin-bottom: 1rem; font-size: 1.8rem;">✅ <strong>Conclusão</strong></h3>
+              <p>
+                Manter uma rotina de exercícios não apenas ajuda a aliviar tensões do dia a dia, mas também potencializa o desempenho mental, melhora a produtividade e contribui para a prevenção de transtornos como ansiedade e depressão.
+              </p>
+            </div>
+
           </article>
         </div>
       </section>
@@ -58,5 +96,22 @@
         <p>Dicas ou Sugestões de conteúdo, escreva para: <span class="footer-email">flaviocampa@icloud.com</span></p>
       </div>
     </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".scroll-reveal").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
   </body>
 </html>
