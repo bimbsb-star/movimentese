@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Importância de um Sono Reparador | Movimente-se</title>
+    <meta
+      name="description"
+      content="Descubra os benefícios do sono reparador para a saúde física e mental, incluindo o fortalecimento do sistema imunológico."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4170865770716081"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="hero" style="min-height: 40vh;">
+      <div class="hero-content">
+        <h1>A Importância de um <span class="highlight">Sono Reparador</span></h1>
+        <a href="index.html" class="cta-button">Voltar para Home</a>
+      </div>
+      <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          
+          <!-- Top Grid Images -->
+          <div class="modalities-grid" style="margin-bottom: 3rem; grid-template-columns: repeat(3, 1fr);">
+            <div class="modality-card scroll-reveal" style="height: 300px;">
+                <img src="assets/sono-1.png" alt="Noite de sono profundo">
+            </div>
+            <div class="modality-card scroll-reveal" style="height: 300px; transition-delay: 0.1s;">
+                <img src="assets/sono-2.png" alt="Cérebro e saúde cognitiva">
+            </div>
+            <div class="modality-card scroll-reveal" style="height: 300px; transition-delay: 0.2s;">
+                <img src="assets/sono-3.png" alt="Despertar revigorante">
+            </div>
+          </div>
+
+          <article class="blog-post">
+            <h2 class="section-title scroll-reveal" style="margin-bottom: 2rem; font-size: 2.5rem;">Sono reparador: O pilar essencial para uma mente sã e um corpo forte</h2>
+            
+            <p class="scroll-reveal">O sono é vital para o <strong>funcionamento cerebral</strong> e a <strong>saúde psicológica</strong>. Durante o descanso, o corpo entra em um estado ativo de reparação, sendo tão importante quanto a alimentação e o exercício físico para a manutenção da saúde.</p>
+            
+            <hr style="border: 0; height: 1px; background: #ddd; margin: 3rem 0;">
+
+            <div class="curiosity-list">
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">🧠</div>
+                <div class="curiosity-text">
+                  <h3>Saúde Mental</h3>
+                  <p>Durante o sono REM, o cérebro processa informações e consolida a memória. Dormir bem regula o humor, reduz o estresse e diminui o risco de ansiedade.</p>
+                </div>
+              </article>
+
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">🛡️</div>
+                <div class="curiosity-text">
+                  <h3>Imunidade Fortalecida</h3>
+                  <p>O descanso é crucial para o sistema imunológico. É durante o sono que o corpo produz citoquinas, essenciais para combater infecções e inflamações.</p>
+                </div>
+              </article>
+
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">⚡</div>
+                <div class="curiosity-text">
+                  <h3>Energia e Metabolismo</h3>
+                  <p>O sono regula hormônios vitais, como a leptina (saciedade) e o GH (crescimento). Dormir bem ajuda no controle de peso e na prevenção de diabetes.</p>
+                </div>
+              </article>
+            </div>
+
+            <hr style="border: 0; height: 1px; background: #ddd; margin: 3rem 0;">
+
+            <div class="menopausa-content scroll-reveal">
+              <h3 style="color: var(--dark-bg); margin-bottom: 1rem; font-size: 1.8rem;">⚠️ <strong>Privação de Sono</strong></h3>
+              <p>
+                Dormir pouco ou mal continuamente não é apenas cansativo - é perigoso. A privação crônica aumenta o risco de hipertensão, doenças cardiovasculares e pode afetar gravemente a resposta imunológica, tornando o corpo mais suscetível a doenças.
+              </p>
+              <h3 style="color: var(--dark-bg); margin-bottom: 1rem; font-size: 1.8rem; margin-top: 2rem;">✅ <strong>Conclusão</strong></h3>
+              <p>
+                Priorizar uma boa noite de sono é um ato de respeito consigo mesmo. Organize sua rotina, evite telas antes de dormir e crie um ambiente propício para o descanso. Seu corpo e sua mente agradecerão com mais saúde, foco e vitalidade.
+              </p>
+            </div>
+
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Movimente-se. Todos os direitos reservados.</p>
+        <p>Feito com energia ⚡</p>
+        <p>Dicas ou Sugestões de conteúdo, escreva para: <span class="footer-email">flaviocampa@icloud.com</span></p>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".scroll-reveal").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>

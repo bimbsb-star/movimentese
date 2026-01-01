@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mente Afiada | Movimente-se</title>
+    <meta
+      name="description"
+      content="Descubra como a atividade física estimula o cérebro, melhora o humor e fortalece a saúde mental."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4170865770716081"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="hero" style="min-height: 40vh;">
+      <div class="hero-content">
+        <h1>Mente <span class="highlight">Afiada</span></h1>
+        <a href="index.html" class="cta-button">Voltar para Home</a>
+      </div>
+      <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          
+          <!-- Top Grid Images (Using existing assets as placeholders) -->
+          <div class="modalities-grid" style="margin-bottom: 3rem; grid-template-columns: repeat(3, 1fr);">
+            <div class="modality-card scroll-reveal" style="height: 300px;">
+                <img src="assets/equilibrio-1.png" alt="Foco Mental">
+            </div>
+            <div class="modality-card scroll-reveal" style="height: 300px; transition-delay: 0.1s;">
+                <img src="assets/sono-2.png" alt="Saúde Cerebral">
+            </div>
+            <div class="modality-card scroll-reveal" style="height: 300px; transition-delay: 0.2s;">
+                <img src="assets/equilibrio-4.jpg" alt="Paz Mental">
+            </div>
+          </div>
+
+          <article class="blog-post">
+            <h2 class="section-title scroll-reveal" style="margin-bottom: 2rem; font-size: 2.5rem;">Atividade Física e Saúde Mental: O Poder do Movimento para o Cérebro</h2>
+            
+            <p class="scroll-reveal">A prática regular de exercícios físicos estimula a liberação de endorfina e serotonina, neurotransmissores diretamente ligados ao bem-estar emocional e ao equilíbrio mental. A endorfina atua como um analgésico natural do corpo, promovendo sensação de prazer e relaxamento.</p>
+            
+            <hr style="border: 0; height: 1px; background: #ddd; margin: 3rem 0;">
+
+            <div class="curiosity-list">
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">🧠</div>
+                <div class="curiosity-text">
+                  <h3>Foco e Memória</h3>
+                  <p>Com níveis mais elevados de serotonina e melhor circulação sanguínea no cérebro, ocorre melhora do foco, da atenção e da memória, facilitando o aprendizado.</p>
+                </div>
+              </article>
+
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">😌</div>
+                <div class="curiosity-text">
+                  <h3>Xô, Estresse!</h3>
+                  <p>Exercícios reduzem os níveis de cortisol, o hormônio do estresse. Isso favorece a sensação de calma, controle emocional e disposição ao longo do dia.</p>
+                </div>
+              </article>
+
+              <article class="curiosity-item scroll-reveal">
+                <div class="curiosity-number">💡</div>
+                <div class="curiosity-text">
+                  <h3>Neuroplasticidade</h3>
+                  <p>A atividade física estimula a capacidade do cérebro de formar novas conexões neurais, fundamental para o raciocínio e a saúde cognitiva a longo prazo.</p>
+                </div>
+              </article>
+            </div>
+
+            <hr style="border: 0; height: 1px; background: #ddd; margin: 3rem 0;">
+
+            <div class="menopausa-content scroll-reveal">
+              <h3 style="color: var(--dark-bg); margin-bottom: 1rem; font-size: 1.8rem;">✅ <strong>Conclusão</strong></h3>
+              <p>
+                Manter uma rotina de exercícios não apenas ajuda a aliviar tensões do dia a dia, mas também potencializa o desempenho mental, melhora a produtividade e contribui para a prevenção de transtornos como ansiedade e depressão.
+              </p>
+            </div>
+
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Movimente-se. Todos os direitos reservados.</p>
+        <p>Feito com energia ⚡</p>
+        <p>Dicas ou Sugestões de conteúdo, escreva para: <span class="footer-email">flaviocampa@icloud.com</span></p>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".scroll-reveal").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
